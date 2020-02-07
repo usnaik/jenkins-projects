@@ -20,6 +20,13 @@ class FizzBuzzTest {
         Assertions.assertEquals(fizzBuzz, "1");
     }
 
+    @DisplayName("Play FizzBuzz with number = -1")
+    @Test
+    public void testNegativeNumber() {
+        String fizzBuzz = fB.play(-1);
+        Assertions.assertEquals(fizzBuzz, "-1");
+    }
+
     @DisplayName("Play FizzBuzz with number = 3")
     @Test
     public void testFizz() {
