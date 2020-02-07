@@ -12,8 +12,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <junit.jupiter.version>5.0.0-M3</junit.jupiter.version>
+        <junit.jupiter.version>5.4.0</junit.jupiter.version>
+        <!--  
         <junit.platform.version>1.0.0-M3</junit.platform.version>
+        -->
     </properties>
 
     <build>
@@ -44,15 +46,22 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.0.0-M3</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!--  
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-runner</artifactId>
             <version>${junit.platform.version}</version>
         </dependency>
-
+		-->
     </dependencies>
 
     <repositories>
